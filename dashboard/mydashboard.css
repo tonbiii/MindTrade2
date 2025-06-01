@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+#content {
+  background: linear-gradient(135deg, #000, #000000) !important;
+  color: #fff;
+}
+
+.mydashboard-container {
+  font-family: 'Orbitron';
+  font-weight: 50;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.welcome {
+  font-family: 'Orbitron';
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: 50;
+}
+
+.total-net-worth {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 40px;
+  font-size: 1.5em;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  animation: glow 2s infinite, fadeIn 0.5s forwards;
+  font-weight: 50;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dashboard-header h1 {
+  font-family: 'Orbitron';
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 8px;
+  font-weight: 50;
+}
+
+.dashboard-header p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 32px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dashboard-grid .card:nth-child(1) { animation-delay: 0.1s; }
+.dashboard-grid .card:nth-child(2) { animation-delay: 0.2s; }
+.dashboard-grid .card:nth-child(3) { animation-delay: 0.3s; }
+.dashboard-grid .card:nth-child(4) { animation-delay: 0.4s; }
+.dashboard-grid .card:nth-child(5) { animation-delay: 0.5s; }
+.dashboard-grid .card:nth-child(6) { animation-delay: 0.6s; }
+.dashboard-grid .card:nth-child(7) { animation-delay: 0.7s; }
+.dashboard-grid .card:nth-child(8) { animation-delay: 0.8s; }
+.dashboard-grid .card:nth-child(9) { animation-delay: 0.9s; }
+
+.card h2 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #eee;
+  font-weight: 50;
+}
+
+.card .amount {
+  font-size: 1.8rem;
+  font-weight: 50;
+  color: #fff;
+}
+
+.card .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.total-net-worth .icon {
+  font-size: 3rem;
+}
+
+.chart-section {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.chart-section h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.chart-section select {
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  margin-bottom: 40px;
+}
+
+.recent-activity,
+.forex-news {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.recent-activity h2,
+.forex-news h2 {
+  font-family: 'Orbitron';
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.recent-activity ul,
+.forex-news ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.recent-activity ul li,
+.forex-news ul li {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  color: #ccc;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: baseline;
+  transition: background 0.3s;
+  font-weight: 50;
+}
+
+.recent-activity ul li:hover,
+.forex-news ul li:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.recent-activity ul li strong,
+.forex-news ul li strong {
+  color: #fff;
+  margin-right: 8px;
+}
+
+.exchange-rates-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.9rem;
+}
+
+.exchange-rates-bar span {
+  margin: 0 15px;
+}

@@ -1,0 +1,80 @@
+/* goals.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* Override light background */
+#content {
+  background: #000 !important;
+  color: #fff;
+}
+
+/* Main container */
+.goals-container {
+  font-family: 'Orbitron', sans-serif;
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Header styles */
+.goals-header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 6px;
+  color: #fff;
+}
+.goals-header p {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 28px;
+}
+
+/* Grid of goal cards */
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Glass-effect goal card */
+.goal-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  color: #fff;
+}
+
+.goal-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+  color: #eee;
+}
+
+.goal-card .due-date {
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+  color: #ccc;
+}
+
+/* Progress bar */
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar .progress {
+  height: 100%;
+  background: #fff;
+  border-radius: 5px 0 0 5px;
+}
+
+/* Progress text */
+.progress-text {
+  font-size: 0.9rem;
+  margin-top: 6px;
+  color: #fff;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Side Navigation Menu</title>
+
+  <!-- Main dashboard CSS (including the appended .content rules) -->
+  <link rel="stylesheet" href="dashboard.css" />
+
+  <!-- Font Awesome (unchanged) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- ───────────────────────────────────────────────────────────────────
+         Your original sidebar (unchanged except for data-section attributes)
+         ─────────────────────────────────────────────────────────────────── -->
+    <div class="sidenav collapsed">
+      <div class="logo-container">
+        <img src="logo.svg" alt="Logo" class="expanded-logo" />
+        <img src="collapsed-logo.svg" alt="Collapsed Logo" class="collapsed-logo" />
+      </div>
+      <div class="icon_items">
+        <ul>
+          <li>
+            <a href="#" data-section="mydashboard">
+              <i class="fa-solid fa-gauge"></i>
+              <span>My Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-section="goals">
+              <i class="fa-solid fa-medal"></i>
+              <span>Goals &amp; Milestones</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-section="performance">
+              <i class="fa-solid fa-money-bill-trend-up"></i>
+              <span>Performance Metrics</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-section="budgeting">
+              <i class="fa-solid fa-coins"></i>
+              <span>Budgeting</span>
+            </a>
+          </li>
+          <li>
+            <a href="../index.html">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ───────────────────────────────────────────────────────────────────
+         <<< THIS IS THE IMPORTANT PART YOU WERE MISSING >>>
+         Add this content div so that dashboard.js can inject section HTML into it.
+         ─────────────────────────────────────────────────────────────────── -->
+    <div class="content" id="content">
+      <!-- Optionally prefill with a “Loading…” or a welcome message -->
+      <h2>Loading…</h2>
+    </div>
+  </div>
+
+  <!-- Main dashboard JS (with the section-loading logic) -->
+  <script src="dashboard.js"></script>
+</body>
+</html>

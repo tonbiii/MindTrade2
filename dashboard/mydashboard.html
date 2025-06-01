@@ -1,0 +1,103 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<div class="exchange-rates-bar">
+  <span><i class="fas fa-euro-sign"></i> EUR/USD: 1.10</span>
+  <span><i class="fas fa-pound-sign"></i> GBP/USD: 1.30</span>
+  <span><i class="fas fa-yen-sign"></i> USD/JPY: 110.00</span>
+</div>
+
+<div class="mydashboard-container">
+  <h1 class="welcome">Welcome Neo Cryptic</h1>
+  <div class="total-net-worth card">
+    <i class="fas fa-wallet icon"></i>
+    <h2>Total Net Worth</h2>
+    <p class="amount">$72,450 / 9,418,500 KSH</p>
+  </div>
+  <div class="dashboard-header">
+    <h1>Dashboard Overview</h1>
+    <p>Snapshot of your financial status across all forex-related accounts.</p>
+  </div>
+  <div class="dashboard-grid">
+    <div class="card">
+      <i class="fas fa-chart-line icon"></i>
+      <h2>Trading Account Equity</h2>
+      <p class="amount">$50,320</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-piggy-bank icon"></i>
+      <h2>Savings Account Balance</h2>
+      <p class="amount">$15,000</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-university icon"></i>
+      <h2>Other Accounts</h2>
+      <p class="amount">$7,130</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-money-bill-wave icon"></i>
+      <h2>Withdrawable Amount</h2>
+      <p class="amount">$6,450</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-calendar-check icon"></i>
+      <h2>Planned Withdrawal</h2>
+      <p class="amount">$1,000</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-chart-bar icon"></i>
+      <h2>Active Trading Balance</h2>
+      <p class="amount">$49,320</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-arrow-up icon"></i>
+      <h2>Total Profits</h2>
+      <p class="amount">$10,000</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-arrow-down icon"></i>
+      <h2>Total Losses</h2>
+      <p class="amount">$2,000</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-balance-scale icon"></i>
+      <h2>Net Profit</h2>
+      <p class="amount">$8,000</p>
+    </div>
+  </div>
+  <div class="chart-section">
+    <div class="chart-container">
+      <h2>Fund Distribution</h2>
+      <canvas id="fundDistributionChart"></canvas>
+    </div>
+    <div class="chart-container">
+      <h2>Net Worth History</h2>
+      <select id="timePeriod">
+        <option value="30d">Last 30 days</option>
+        <option value="7d">Last 7 days</option>
+        <option value="ytd">Year to date</option>
+      </select>
+      <canvas id="netWorthHistoryChart"></canvas>
+    </div>
+    <div class="chart-container">
+      <h2>Account Balances</h2>
+      <canvas id="accountBalancesChart"></canvas>
+    </div>
+  </div>
+  <div class="recent-activity">
+    <h2>Recent Activity</h2>
+    <ul>
+      <li><strong>+ $5,000</strong> deposit to Trading Account  –  2 days ago</li>
+      <li><strong>– $1,000</strong> planned withdrawal  –  3 days ago</li>
+      <li><strong>+ $250</strong> profit from EUR/USD trade  –  4 days ago</li>
+      <li><strong>– $500</strong> withdrawal from Savings Account  –  6 days ago</li>
+    </ul>
+  </div>
+  <div class="forex-news card">
+    <h2>Forex News</h2>
+    <ul>
+      <li><strong>Fed announces interest rate hike</strong> - 1 hour ago</li>
+      <li><strong>ECB holds rates steady</strong> - 2 hours ago</li>
+      <li><strong>Bank of Japan intervenes in currency markets</strong> - 3 hours ago</li>
+    </ul>
+  </div>
+</div>

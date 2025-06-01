@@ -1,0 +1,84 @@
+/* performance.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+#content {
+  background: #000 !important;
+  color: #fff;
+}
+
+/* Main container */
+.performance-container {
+  font-family: 'Orbitron', sans-serif;
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Header */
+.performance-header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 6px;
+  color: #fff;
+}
+.performance-header p {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 28px;
+}
+
+/* Glass-effect for table card */
+.table-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.table-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.metrics-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.metrics-table th,
+.metrics-table td {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px 12px;
+  text-align: left;
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+.metrics-table th {
+  background: rgba(255, 255, 255, 0.1);
+  color: #eee;
+}
+
+/* Glass-effect for chart card */
+.chart-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.chart-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+#equityCurveChart {
+  width: 100% !important;
+  height: 300px !important;
+}
